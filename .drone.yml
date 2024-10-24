@@ -1,10 +1,8 @@
----
 kind: pipeline
-type: docker
-name: default
+name: oas_cliente_ci
 
 steps:
-- name: greeting
-  image: golang:1.12
+- name: check_readme
+  image: jjvargass/qa_develoment:latest
   commands:
   - lscpu
